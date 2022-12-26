@@ -56,6 +56,7 @@ export default function Header(props) {
           backgroundColor: "transparent",
           boxShadow: "none",
           mt: 2,
+          position: `static`
         }}
       >
         <Container>
@@ -65,7 +66,7 @@ export default function Header(props) {
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" } }}
+              sx={{ mr: 2, display: { sm: "none" }, backgroundColor: 'primary.main' }}
             >
               <MenuIcon />
             </IconButton>
